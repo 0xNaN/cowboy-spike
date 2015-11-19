@@ -37,7 +37,7 @@ stop(_State) ->
 routes() ->
     [
      {'_', [
-            {"/", my_app_handler, []}
+            {"/:myvar", my_app_handler, []}
            ]}
     ].
 
