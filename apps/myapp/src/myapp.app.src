@@ -8,7 +8,9 @@
     stdlib,
     cowboy
    ]},
-  {env,[]},
+  {env,[
+        {http_port, 8080}
+  ]},
   {modules, []},
 
   {contributors, []},
