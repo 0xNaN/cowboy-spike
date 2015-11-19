@@ -8,7 +8,6 @@ init(_Transport, Req, []) ->
 
 handle(Req, State) ->
         {Method, Req2} = cowboy_req:method(Req),
-        io:format("Metodo ~p", [Method]),
         {ok, Req3} = handle_request(Method, Req2),
         {ok, Req3, State}.
 
